@@ -1,18 +1,18 @@
-package Controller;
+package com.markovski.usermanagement.Controller;
 
-import DTO.AppUserRequest;
-import DTO.AppUserResponse;
-import Service.UserService;
+import com.markovski.usermanagement.DTO.AppUserRequest;
+import com.markovski.usermanagement.DTO.AppUserResponse;
+import com.markovski.usermanagement.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import Exception.UserNotFoundException;
+import com.markovski.usermanagement.Exception.UserNotFoundException;
 
 import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/users")
+@RequestMapping("/api/users")
 public class UserController {
 
     private final UserService userService;
@@ -42,7 +42,7 @@ public class UserController {
         }
     }
 
-    @PostMapping()
+    @PostMapping("/add")
     public ResponseEntity<AppUserResponse> addUser(@RequestBody AppUserRequest request) {
         AppUserResponse addedUser = userService.addUser(request);
         return ResponseEntity.created(URI.create("/users/" + addedUser.getId())).body(addedUser);

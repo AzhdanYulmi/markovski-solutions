@@ -1,6 +1,6 @@
-package Repository;
+package com.markovski.usermanagement.Repository;
 
-import Entity.AppUser;
+import com.markovski.usermanagement.Entity.AppUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

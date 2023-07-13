@@ -1,13 +1,13 @@
-package Service;
+package com.markovski.usermanagement.Service;
 
-import DTO.AppUserRequest;
-import DTO.AppUserResponse;
-import Entity.AppUser;
-import Mapper.UserMapper;
-import Repository.UserRepository;
+import com.markovski.usermanagement.DTO.AppUserRequest;
+import com.markovski.usermanagement.DTO.AppUserResponse;
+import com.markovski.usermanagement.Entity.AppUser;
+import com.markovski.usermanagement.Mapper.UserMapper;
+import com.markovski.usermanagement.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import Exception.UserNotFoundException;
+import com.markovski.usermanagement.Exception.UserNotFoundException;
 
 import java.util.List;
 

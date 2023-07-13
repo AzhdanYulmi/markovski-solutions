@@ -1,4 +1,4 @@
-package DTO;
+package com.markovski.usermanagement.DTO;
 
 import jakarta.validation.constraints.NotEmpty;
 

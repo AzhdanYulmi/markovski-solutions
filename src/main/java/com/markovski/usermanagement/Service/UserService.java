@@ -1,8 +1,8 @@
-package Service;
+package com.markovski.usermanagement.Service;
 
-import DTO.AppUserRequest;
-import DTO.AppUserResponse;
-import Entity.AppUser;
+import com.markovski.usermanagement.DTO.AppUserRequest;
+import com.markovski.usermanagement.DTO.AppUserResponse;
+import com.markovski.usermanagement.Entity.AppUser;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package Mapper;
+package com.markovski.usermanagement.Mapper;
 
-import DTO.AppUserRequest;
-import DTO.AppUserResponse;
-import Entity.AppUser;
+import com.markovski.usermanagement.DTO.AppUserRequest;
+import com.markovski.usermanagement.DTO.AppUserResponse;
+import com.markovski.usermanagement.Entity.AppUser;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
