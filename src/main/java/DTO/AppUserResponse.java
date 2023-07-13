@@ -2,7 +2,7 @@ package DTO;
 
 import java.time.LocalDate;
 
-public class AppUserDTO {
+public class AppUserResponse {
     private int id;
     private String firstName;
     private String lastName;
@@ -10,10 +10,10 @@ public class AppUserDTO {
     private String phoneNumber;
     private String emailAddress;
 
-    public AppUserDTO() {
+    public AppUserResponse() {
     }
 
-    public AppUserDTO(int id, String firstName, String lastName, LocalDate dateOfBirth, String phoneNumber, String emailAddress) {
+    public AppUserResponse(int id, String firstName, String lastName, LocalDate dateOfBirth, String phoneNumber, String emailAddress) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
