@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import com.markovski.usermanagement.Exception.UserNotFoundException;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -24,8 +25,14 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public AppUser findUserById(int id) {
-        return userRepository.findById(id).orElseThrow(() -> new UserNotFoundException(String.format("User hasn't been found" + id)));
+        Optional<AppUser> optionalUser = userRepository.findById(id);
+        if (optionalUser.isPresent()) {
+            return optionalUser.get();
+        } else {
+            throw new UserNotFoundException("User not found for ID: " + id);
+        }
     }
+
 
     @Override
     public AppUserResponse getUserById(int id) {
