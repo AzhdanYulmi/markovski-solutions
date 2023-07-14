@@ -53,4 +53,4 @@ To run the User Management Application locally, follow these steps:
 8. The User Management Application will be accessible at `http://localhost:8080`.
 
 Make sure to customize the database connection properties according to your local setup. You may need to update the database URL, username, and password in the `application.properties` file.
-This README provides an overview of the functionalities available in the User Management Application. For detailed information about the API endpoints, request/response formats, and error handling, please refer to the API documentation or contact the developers.
+This README provides an overview of the functionalities available in the User Management Application.
